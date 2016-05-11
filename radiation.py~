@@ -1,0 +1,40 @@
+from __future__ import print_function
+import sys
+import numpy as np
+import matplotlib
+matplotlib.use('PS')
+import matplotlib.pyplot as plt
+
+"""Back radiation thought experiment illustrative simulation"""
+
+sb = 5.67e-8 #Stephan-Boltzmann constant
+S = 100 #Constant energy input term
+c = 3e8 #speed of light
+n = 1000
+dz = n*c #Distance between plates (n light seconds)
+dt = 1 #time step, seconds
+cap = 1 #heat capacity
+
+eii = 0.5
+Ti = 0 #K
+Tii = 0 #K
+z = np.linspace(0,n,1.0/dt) #Discretized space
+
+ji = 0
+jii = 0
+
+jiz = np.zeros(z.shape)
+jiiz = np.zeros(z.shape)
+
+t0 = 0
+ts = 100*n
+t = np.arange(t0,ts,dt)
+
+
+
+
+
+
+
+
+
